@@ -14,18 +14,18 @@ import matplotlib.pyplot as plt
 # Taking values from 0 to 360 for the cycle of sine/cosine.
 period = np.arange(0,2*np.pi,0.01)
 
-# Sine and Cosine Graph
+# Sine, Cosine and tangent Graph
 sine = np.sin(period )
 cosine = np.cos(period )
+tan = np.tan(period)
 
-###bhgh
+#plotting sin and cosine on the same axis
+plt.plot(period,sine,period,cosine,period,tan)
 
-# Creating plots, X & Y axes and legends
-plt.plot(period , sine , period , cosine)
-
-plt.subplot().legend(['Sine','Cosine'])               #
+##creating legends
+plt.subplot().legend(['Sine','Cosine','Tangent'])
 
 plt.subplot().axhline(y=0, color='k')
 plt.subplot().axvline(x=0, color='k')
-
+plt.savefig("graph.png")
 plt.show()
