@@ -18,6 +18,8 @@ period = np.arange(0,2*np.pi,0.01)
 sine = np.sin(period )
 cosine = np.cos(period )
 
+###bhgh
+
 # Creating plots, X & Y axes and legends
 plt.plot(period , sine , period , cosine)
 
